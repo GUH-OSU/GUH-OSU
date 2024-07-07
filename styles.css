@@ -94,6 +94,8 @@ header nav ul li a {
 .main-content {
     flex: 1;
     padding: 20px;
+    background: white;
+    border-radius: 5px;
 }
 
 .intro, .vision, .principles, .initiatives, .work-groups, .join-us, .commitments, .global-governance {
