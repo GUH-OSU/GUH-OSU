@@ -1,172 +1,93 @@
-/* styles.css global */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
 header {
-    background: #007BFF;
-    color: white;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #333 3px solid;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    background-color: #d0e7f9;
+    padding: 20px;
     text-align: center;
 }
 
-header h1 {
-    margin: 250px 0 0 0;
-    font-size: 2em;
+#logo {
+    max-width: 55px;
 }
 
-header .logo {
-    max-width: 50px;
-    margin-bottom: 10px;
+nav {
+    background-color: #003366;
 }
 
-nav ul.main-menu {
-    padding: 0;
+.main-menu {
     list-style: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background: #f4f4f4;
+    padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
-nav ul.main-menu li.menu-item {
+.main-menu > li {
     position: relative;
-    margin: 5px;
 }
 
-nav ul.main-menu li.menu-item a {
-    display: block;
-    padding: 10px 20px;
-    color: black;
+.main-menu a {
+    color: white;
     text-decoration: none;
-    background: #e0e0e0;
-    border: 1px solid #ccc;
-    transition: background 0.3s;
+    padding: 15px 20px;
+    display: block;
 }
 
-nav ul.main-menu li.menu-item a:hover {
-    background: #b0c4de;
-}
-
-nav ul.main-menu li.menu-item ul.submenu {
+.main-menu .sub-menu {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
+    background-color: #00509e;
     list-style: none;
     padding: 0;
-    border: 1px solid #ccc;
-    width: 200px;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
     z-index: 1000;
 }
 
-nav ul.main-menu li.menu-item ul.submenu li a {
+.main-menu .sub-menu li {
+    border-bottom: 1px solid #004080;
+}
+
+.main-menu .sub-menu a {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
-nav ul.main-menu li.menu-item ul.submenu li a:hover {
-    background: #b0c4de;
-}
-
-nav ul.main-menu li.menu-item.active ul.submenu {
+.main-menu > li:hover .sub-menu {
     display: block;
 }
 
-/* Sidebar */
-.sidebar {
-    width: 200px;
-    background: #f4f4f4;
+main {
     padding: 20px;
 }
 
-.sidebar-item {
+.block {
+    background-color: #f2f2f2;
+    padding: 20px;
     margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
+    border-radius: 8px;
 }
 
-.gray-blue {
-    background-color: #B0C4DE;
+.block h2, .block h3 {
+    color: #333;
 }
 
-.gray {
-    background-color: #D3D3D3;
+.block ul {
+    padding-left: 20px;
 }
 
-.blue {
-    background-color: #ADD8E6;
-}
-
-.sidebar-item a {
-    color: black;
-    text-decoration: none;
-}
-
-.main-content {
-    flex: 1;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-}
-
-.intro, .vision, .principles, .initiatives, .work-groups, .join-us, .commitments, .global-governance {
-    background: #E3F2FD;
-}
-
-section .container {
-    text-align: center;
-}
-
-section ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-}
-
-section ul li {
-    padding: 10px 0;
+.block ul li {
+    margin-bottom: 10px;
 }
 
 footer {
-    background: #333;
-    color: white;
+    background-color: #d0e7f9;
+    padding: 10px;
     text-align: center;
-    padding: 10px 0;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #0056b3;
 }
