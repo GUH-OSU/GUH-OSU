@@ -116,6 +116,6 @@ footer {
     }
 
     .main-menu > li {
-        margin: 0 5px; /* Réduction de l'espacement entre les éléments du menu */
+        margin: 0 2.5px; /* Réduction de l'espacement entre les éléments du menu par rapport à la version précédente */
     }
 }
