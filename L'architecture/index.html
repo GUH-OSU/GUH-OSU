@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'architecture de l'OSU</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Inclusion du logo -->
+    <div id="logo-container"></div>
+
+    <!-- Inclusion du menu -->
+    <div id="menu-container"></div>
+
+    <main>
+        <section class="block">
+            <h2>Gouvernance de l'OSU</h2>
+            <p>L'Architecte et la Gouvernance</p>
+            <p>Élection et Contrôle</p>
+        </section>
+
+        <section class="block">
+            <h2>L'Architecte de l'OSU :</h2>
+            <h3>Élection :</h3>
+            <p>L'Architecte de l'OSU est élu au suffrage universel direct pour une période de 15 ans. Ce long mandat vise à assurer la stabilité et la continuité des travaux de l'OSU.</p>
+            <h3>Contrôle :</h3>
+            <p>L'Architecte est soumis à un contrôle régulier par les citoyens et les représentants des Groupements d'Intérêt (GI) et des Grands Groupements d'Intérêt (GGI). En cas de manquements graves à ses fonctions, un référendum peut être organisé pour décider de sa destitution.</p>
+            <h3>Fonctions de l'Architecte :</h3>
+            <ul>
+                <li>Représentation : L'Architecte représente l'OSU sur la scène internationale et lors des grandes décisions stratégiques.</li>
+                <li>Arbitrage : Il arbitre les grandes orientations politiques et stratégiques de l'OSU.</li>
+                <li>Veille au Respect des Principes : L'Architecte s'assure que les actions de l'OSU respectent les principes de justice, durabilité et gouvernance citoyenne.</li>
+            </ul>
+        </section>
+
+        <section class="block">
+            <h2>Gouvernance de l'OSU :</h2>
+            <h3>Élection des Coordinators :</h3>
+            <p>Les Coordinators sont élus au suffrage universel direct pour une période de 15 ans. Ils sont responsables de la mise en œuvre des politiques publiques en conformité avec la Charte des valeurs intangibles de l'OSU.</p>
+            <h3>Contrôle Régulier :</h3>
+            <p>La gouvernance est soumise à un contrôle régulier par les citoyens et les représentants des GI et GGI. Des rapports annuels détaillant les actions des Coordinators sont publiés pour garantir la transparence.</p>
+        </section>
+
+        <section class="block">
+            <h2>Présentation de l'Architecture de l'OSU</h2>
+            <h3>Groupes de Réflexion Citoyens</h3>
+            <p>Ces groupes sont composés de citoyens volontaires qui se réunissent régulièrement pour discuter et proposer des idées et des résolutions. Ils enrichissent le processus législatif de l'OSU par leurs perspectives variées et leurs idées innovantes.</p>
+            <h3>Organes de Contrôle Indépendants</h3>
+            <p>Pour garantir le respect des principes de justice et de durabilité, des organes de contrôle indépendants, comme le Tribunal International du Vivant, sont mis en place. Ces organes surveillent et évaluent les actions de l'OSU de manière impartiale.</p>
+            <h3>Collectifs Citoyens (CC)</h3>
+            <p>Les CC sont organisés par des bureaux élus pour des mandats de 5 ans non renouvelables, constitués de 20 membres au maximum, non rémunérés. Les bureaux sont responsables de l'organisation interne et de la mise en œuvre des résolutions votées par les citoyens.</p>
+            <h3>Groupements d'Intérêt (GI) et Grands Groupements d'Intérêt (GGI)</h3>
+            <ul>
+                <li>Représenter les intérêts des membres dans les décisions politiques.</li>
+                <li>Garantir l'indépendance et l'intégrité des GI par des règlements internes.</li>
+                <li>Coordonner avec les GGI pour représenter les intérêts collectifs.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Engagez-vous pour un avenir durable avec l'OSU. Ensemble, nous pouvons faire la différence.</p>
+    </footer>
+
+    <script>
+        fetch('logo.html').then(response => response.text()).then(data => document.getElementById("logo-container").innerHTML = data);
+        fetch('menu.html').then(response => response.text()).then(data => document.getElementById("menu-container").innerHTML = data);
+    </script>
+</body>
+</html>
