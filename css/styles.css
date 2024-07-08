@@ -24,7 +24,7 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Centrer le menu */
 }
 
 .main-menu > li {
@@ -101,7 +101,7 @@ footer {
     .main-menu {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center; /* Centrer le menu */
+        justify-content: center; /* Centrer le menu sur mobile */
     }
 
     .main-menu > li {
@@ -110,3 +110,12 @@ footer {
     }
 }
 
+@media (min-width: 769px) {
+    .main-menu {
+        justify-content: center; /* Centrer le menu sur grand écran */
+    }
+
+    .main-menu > li {
+        margin: 0 5px; /* Réduction de l'espacement entre les éléments du menu */
+    }
+}
