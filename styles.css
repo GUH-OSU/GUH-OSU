@@ -34,170 +34,66 @@ header h1 {
 }
 
 header .logo {
-    max-width: 300px;
+    max-width: 350px;
     margin-bottom: 10px;
 }
 
-header nav ul {
+nav ul.main-menu {
     padding: 0;
     list-style: none;
     text-align: center;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-    text-transform: uppercase;
-}
-
-.content {
     display: flex;
-}
-
-.sidebar {
-    width: 200px;
-    background: #f4f4f4;
-    padding: 20px;
-}
-
-.sidebar-item {
-    margin-bottom: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.gray-blue {
-    background-color: #B0C4DE;
-}
-
-.gray {
-    background-color: #D3D3D3;
-}
-
-.blue {
-    background-color: #ADD8E6;
-}
-
-.sidebar-item a {
-    color: black;
-    text-decoration: none;
-}
-
-.main-content {
-    flex: 1;
-    padding: 20px;
-    background: white;
-    border-radius: 5px;
-}
-
-.intro, .vision, .principles, .initiatives, .work-groups, .join-us, .commitments, .global-governance {
-    background: #E3F2FD;
-}
-
-section .container {
-    text-align: center;
-}
-
-section ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-}
-
-section ul li {
-    padding: 10px 0;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.btn:hover {
-    background: #0056b3;
-}
-/* styles.css global */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: #007BFF;
-    color: white;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #333 3px solid;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    background: #f4f4f4;
+    margin: 0;
 }
 
-header h1 {
-    margin: 10px 0 0 0;
-    font-size: 2em;
+nav ul.main-menu li.menu-item {
+    position: relative;
 }
 
-header .logo {
-    max-width: 230px;
-    margin-bottom: 10px;
-}
-
-header nav ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: white;
+nav ul.main-menu li.menu-item a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
     text-decoration: none;
-    font-size: 1em;
-    text-transform: uppercase;
+    background: #e0e0e0;
+    border: 1px solid #ccc;
+    margin: 5px;
+    transition: background 0.3s;
 }
 
-.content {
-    display: flex;
+nav ul.main-menu li.menu-item a:hover {
+    background: #b0c4de;
 }
 
+nav ul.main-menu li.menu-item ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    border: 1px solid #ccc;
+    width: 200px;
+    z-index: 1000;
+}
+
+nav ul.main-menu li.menu-item ul.submenu li a {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul.main-menu li.menu-item ul.submenu li a:hover {
+    background: #b0c4de;
+}
+
+nav ul.main-menu li.menu-item.active ul.submenu {
+    display: block;
+}
+
+/* Sidebar */
 .sidebar {
     width: 200px;
     background: #f4f4f4;
@@ -274,4 +170,3 @@ footer {
 .btn:hover {
     background: #0056b3;
 }
-
