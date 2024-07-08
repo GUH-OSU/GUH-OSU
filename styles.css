@@ -97,23 +97,22 @@ nav ul.main-menu li.menu-item.active ul.submenu {
     display: block;
 }
 
-/* Content boxes */
-.box {
+.intro, .vision, .principles {
     background: #E3F2FD;
     padding: 20px;
     margin: 20px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    text-align: justify; /* Justify text */
 }
 
-.box h2, .box h3 {
-    margin-top: 0;
+section .container {
+    text-align: center;
 }
 
 section ul {
     list-style: none;
     padding: 0;
     text-align: left;
+    text-align: justify; /* Justify text */
 }
 
 section ul li {
@@ -125,6 +124,20 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0056b3;
 }
 
 /* Responsive styles */
@@ -156,5 +169,23 @@ footer {
 
     header .logo {
         max-width: 100px;
+    }
+
+    .intro, .vision, .principles {
+        margin: 10px 0; /* Add margin for mobile */
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+    .intro, .vision, .principles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .intro, .vision, .principles {
+        flex: 1 1 calc(33.333% - 20px);
+        margin: 10px;
     }
 }
