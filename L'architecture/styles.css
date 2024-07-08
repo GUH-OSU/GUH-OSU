@@ -24,7 +24,7 @@ nav {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centrer le menu */
 }
 
 .main-menu > li {
@@ -34,7 +34,7 @@ nav {
 .main-menu a {
     color: white;
     text-decoration: none;
-    padding: 15px 10px;
+    padding: 15px 10px; /* Réduction de l'espacement entre les éléments du menu */
     display: block;
 }
 
@@ -90,46 +90,4 @@ footer {
     background-color: #d0e7f9;
     padding: 10px;
     text-align: center;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    #logo {
-        max-width: 200px;
-    }
-
-    .main-menu {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .main-menu > li {
-        width: auto;
-        text-align: center;
-    }
-
-    .block {
-        margin-bottom: 10px;
-    }
-}
-
-@media (min-width: 769px) {
-    .main-menu {
-        justify-content: center;
-    }
-
-    .main-menu > li {
-        margin: 0 2.5px;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-
-    .block {
-        margin-bottom: 0;
-    }
 }
