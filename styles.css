@@ -1,4 +1,4 @@
-/* styles.css */
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,12 +20,13 @@ header {
     border-bottom: #333 3px solid;
 }
 
-.logo-container {
+header .logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 20px; /* Add space between logo and menu */
 }
 
 header h1 {
@@ -34,8 +35,10 @@ header h1 {
 }
 
 header .logo {
-    max-width: 350px;
-    margin-bottom: 10px;
+    max-width: 350px; /* Set the logo size for PC screens */
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 nav ul.main-menu {
@@ -46,6 +49,7 @@ nav ul.main-menu {
     justify-content: center;
     background: #f4f4f4;
     margin: 0;
+    flex-wrap: wrap;
 }
 
 nav ul.main-menu li.menu-item {
@@ -91,4 +95,77 @@ nav ul.main-menu li.menu-item ul.submenu li a:hover {
 
 nav ul.main-menu li.menu-item.active ul.submenu {
     display: block;
+}
+
+.intro, .vision, .principles {
+    background: #E3F2FD;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+section .container {
+    text-align: center;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+section ul li {
+    padding: 10px 0;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    nav ul.main-menu {
+        flex-direction: column;
+    }
+    
+    nav ul.main-menu li.menu-item ul.submenu {
+        position: static;
+    }
+    
+    nav ul.main-menu li.menu-item ul.submenu li a {
+        border-bottom: 1px solid #ccc;
+    }
+    
+    nav ul.main-menu li.menu-item ul.submenu li a:hover {
+        background: #e0e0e0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header .logo {
+        max-width: 100px;
+    }
 }
