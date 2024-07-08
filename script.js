@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const parent = item.parentElement;
             const subMenu = parent.querySelector('.submenu');
 
-            // Fermer tous les autres sous-menus
+            // Close all other submenus
             document.querySelectorAll('.menu-item').forEach(el => {
                 if (el !== parent) {
                     el.classList.remove('active');
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
 
-            // Toggle le sous-menu de l'élément cliqué
+            // Toggle the submenu of the clicked item
             if (parent.classList.contains('active')) {
                 parent.classList.remove('active');
                 subMenu.style.display = 'none';
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Fermer les sous-menus lorsqu'on clique en dehors du menu
+    // Close submenus when clicking outside the menu
     document.addEventListener('click', function(event) {
         if (!event.target.closest('nav')) {
             document.querySelectorAll('.menu-item').forEach(el => {
@@ -40,4 +40,3 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
-
