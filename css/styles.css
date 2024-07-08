@@ -12,7 +12,7 @@ header {
 }
 
 #logo {
-    max-width: 250px; /* Augmentation de la taille maximale du logo */
+    max-width: 250px;
 }
 
 nav {
@@ -34,7 +34,7 @@ nav {
 .main-menu a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 15px 10px; /* Réduction de l'espacement entre les éléments du menu */
     display: block;
 }
 
@@ -95,16 +95,17 @@ footer {
 /* Responsive Styles */
 @media (max-width: 768px) {
     #logo {
-        max-width: 200px; /* Augmentation de la taille maximale du logo pour les petits écrans */
+        max-width: 200px;
     }
 
     .main-menu {
-        flex-direction: column;
-        align-items: center; /* Alignement centré des éléments du menu */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; /* Centrer le menu */
     }
 
     .main-menu > li {
-        width: 100%;
-        text-align: center; /* Centrer le texte des éléments du menu */
+        width: auto;
+        text-align: center;
     }
 }
